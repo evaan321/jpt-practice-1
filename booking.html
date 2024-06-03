@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khabar Time</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="booking.html">Book with us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <a href="index.html" class="btn btn-ghost text-xl">Khabar Time</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html">Book with us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Signup/Login</a>
+            </div>
+          </div>
+    </nav>
+
+    <main>
+        <section class="flex justify-center items-center min-h-screen bg-gray-100">
+            <h1 class="text-center text-5xl font-medium me-10">Book With Us</h1>
+            <form class="w-full max-w-lg bg-white p-8 rounded-lg shadow-md">
+              <div class="space-y-12">
+                <div class="border-b border-gray-900/10 pb-12">
+                  <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                    <div class="sm:col-span-3">
+                      <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                      <div class="mt-2">
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+          
+                    <div class="sm:col-span-3">
+                      <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                      <div class="mt-2">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label for="Phone" class="block text-sm font-medium leading-6 text-gray-900">Phone</label>
+                      <div class="mt-2">
+                        <input type="number" name="phone" id="phone" autocomplete="tel" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label for="number-of-guests" class="block text-sm font-medium leading-6 text-gray-900">Number Of Guests</label>
+                      <div class="mt-2">
+                        <input type="number" name="number-of-guests" id="number-of-guests" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label for="date-of-visit" class="block text-sm font-medium leading-6 text-gray-900">Date of Visit</label>
+                      <div class="mt-2">
+                        <input type="date" name="date-of-visit" id="date-of-visit" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label for="time-of-visit" class="block text-sm font-medium leading-6 text-gray-900">Time</label>
+                      <div class="mt-2">
+                        <input type="time" name="time-of-visit" id="time-of-visit" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+          
+                    <div class="sm:col-span-4">
+                      <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                      <div class="mt-2">
+                        <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    
+                    <div class="col-span-full">
+                      <label for="special-request" class="block text-sm font-medium leading-6 text-gray-900">Special Request</label>
+                      <div class="mt-2">
+                        <input type="text" name="special-request" id="special-request" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 flex items-center justify-end gap-x-6">
+                <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+                <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+              </div>
+            </form>
+          </section>
+    </main>
+
+</body>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</html>
